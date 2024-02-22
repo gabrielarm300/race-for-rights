@@ -17,3 +17,6 @@ views = Blueprint(__name__, "views")
 @views.route("/")
 def home():
     return render_template("index.html", plswork = donation_value)
+
+if __name__ == "main":
+    views.run(debug=False, host= '0.0.0.0')
